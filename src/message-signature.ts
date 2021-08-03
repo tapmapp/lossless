@@ -3,6 +3,9 @@ import { Maybe } from './generated/graphql';
 
 export const verify = function (message: Maybe<string> | undefined, address: Maybe<string> | undefined, signature: Maybe<string> | undefined): boolean {
     return true;
+
+    // REQUEST MISSING FOR SIGNATURE VERIFICATION, SHOULD ME A POST REQUEST WITH THE PARAMS ON THE BODY
+
     /*return axios.post(
         `https://api.etherscan.io/api?module=account&action=tokenbalance&contractaddress=0x3b9be07d622accaed78f479bc0edabfd6397e320&address=${walletAddress}&tag=latest&apikey=${process.env.API_KEY}`
     )
