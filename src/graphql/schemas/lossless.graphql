@@ -1,0 +1,13 @@
+type Query {
+    balance(address: String): Float
+}
+
+type Mutation {
+    validate(message: String, address: String, signature: String): Boolean
+}
+
+input ValidationParams {
+    message: String
+    address: String
+    signature: String
+}

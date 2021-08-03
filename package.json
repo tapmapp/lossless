@@ -1,0 +1,41 @@
+{
+  "name": "lossless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tapmapp/lossless.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tapmapp/lossless/issues"
+  },
+  "homepage": "https://github.com/tapmapp/lossless#readme",
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.21.8",
+    "@graphql-codegen/typescript": "1.23.0",
+    "@graphql-codegen/typescript-resolvers": "1.20.0",
+    "@types/express": "^4.17.13",
+    "@types/graphql": "^14.5.0",
+    "graphql": "^15.5.1",
+    "graphql-tools": "^8.0.0",
+    "nodemon": "^2.0.12",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.1.1",
+    "axios": "^0.21.1",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "graphql-import-node": "^0.0.4",
+    "web3": "^1.5.0"
+  }
+}
