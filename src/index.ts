@@ -10,7 +10,7 @@ async function startApolloServer() {
   // Construct a schema, using GraphQL schema language
   const typeDefs = gql`
     type Query {
-      balance(address: String): Float
+      balance(address: String!): Float
     },
     type Mutation {
       validate(message: String, address: String, signature: String): Boolean
